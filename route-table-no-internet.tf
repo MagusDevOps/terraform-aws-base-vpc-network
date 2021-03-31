@@ -1,5 +1,5 @@
 resource "aws_route_table" "no-internet" {
-  vpc_id = aws_vpc.network_hub_vpc.id
+  vpc_id = aws_vpc.vpc.id
 
   tags = {
     Name = "${var.environment}-no-internet"
